@@ -43,3 +43,33 @@ This is an ongoing project with regular updates. Feel free to contribute or sugg
 ## License
 
 Copyright © Career Cruise Control. All rights reserved.
+ 
+ ## Local Development
+
+ To run the game locally:
+
+ **Option 1:** Open `index.html` directly in your browser.
+
+ **Option 2:** Use a simple HTTP server:
+
+ ```bash
+ cd path/to/dodgechallenge
+ python3 -m http.server 8000
+ ```
+
+ Open [http://localhost:8000](http://localhost:8000) to play.
+
+ ## Docker
+
+ Build and run with Docker:
+
+ ```bash
+ docker build -t dodgechallenge .
+ docker run -p 8080:80 dodgechallenge
+ ```
+
+ The game will be served on http://localhost:8080
+
+ ## Environment Variables
+
+ None required for this project.
